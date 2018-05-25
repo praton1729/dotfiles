@@ -1,0 +1,17 @@
+#! /bin/bash
+
+# Color-window options
+theme_color="#DD2241"
+window_background=$theme_color
+window_border=$theme_color
+
+# color-normal options
+
+normal_background=$theme_color
+normal_foreground="#ffffff"
+normal_background_alt=$theme_color
+normal_highlight_background="#00ffaa"
+normal_highlight_foreground="#4b0082"
+
+rofi -show run -lines 5 -eh 2 -width 100 -opacity "100" -padding 300 -font "System San Francisco Display 15" -color-window $window_background,$window_border -color-normal $normal_background,$normal_foreground,$normal_background_alt,$normal_highlight_background,$normal_higlight_foreground
+
