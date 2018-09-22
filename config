@@ -15,12 +15,12 @@ set $right semicolon
 floating_modifier Mod4
 
 # start a terminal
-bindsym Mod4+t exec alacritty
-bindsym Mod4+u exec urxvt
+bindsym Mod4+t exec urxvt
 # kill focused window
 bindsym Mod4+q kill
 bindsym Mod1+Shift+q exec shutdown now
 bindsym Mod4+d exec ~/.i3/rofi
+bindsym Mod4+x exec synapse
 
 # change focus
 bindsym Mod4+$left focus left
@@ -146,7 +146,9 @@ bindsym Mod4+n exec notes
 
 #Hiding window borders
 #hide_edge_borders active
-new_window pixel 0
+new_window none
+new_float none
+
 #Popup behaviour
 popup_during_fullscreen smart
 
@@ -173,7 +175,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 exec_always --no-startup-id compton -f
-exec_always --no-startup-id polybar example -c ~/.config/polybar/config
+exec_always --no-startup-id polybar example -c ~/.i3/polybar_config
 # color definitions
 set $bg     #2c2c2e
 set $fg     #9f9f9f
