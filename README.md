@@ -15,3 +15,6 @@ Status:
   recently.
 	- Will give these a go whenever I do a new i3 setup.
 	- Letting it stay here as a reminder.
+- alacritty: Add a basic alacritty yml config.
+	- Just started using alacritty.
+	- This will evolve as we move forward.
